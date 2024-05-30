@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/advicegenerator-D3Fq1R2Upj)
+- Live Site URL: [URL](https://maxim-pv.github.io/advice-generator/)
 
 
 ### Built with
