@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Advice generator</title>
 </head>
-<body>
-    
+<body onload="getAdvice()">
+    <div class="container">
+        <div class="advice-id">advice #<span id="advice-id"></span></div>
+        <h2 id="advice">Loading advice ...</h2>
+        <div class="devider-container">
+            <span class="divider"></span>
+            <div class="sticks-container">
+                <span class="stick"></span>
+                <span class="stick"></span>
+            </div>
+            <span class="divider"></span>
+        </div>
+        <button class="btn" onclick="getAdvice()">
+            <img  class="icon-dice" src="images/icon-dice.svg" alt="icon-dice">
+        </button>
+    </div>
+
     <script src="getAdvice.js"></script>
 </body>
 </html>

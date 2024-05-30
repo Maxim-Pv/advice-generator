@@ -1,5 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40%;
+    width: 40%;
+    padding: 40px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    position: relative;
+    filter: drop-shadow(0 0 1.5rem rgba(0, 0, 0, 0.288));
+}
+
+.advice-id {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: hsl(150, 100%, 66%);
+}
+
+#advice {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: hsl(193, 38%, 86%);
+}
+
+.devider-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.divider {
+    width: 45%;
+    height: 2px;
+    background-color:hsl(218deg 9.43% 34.67%);
+}
+
+.sticks-container {
+    display: flex;
+    margin: 0 10px;
+}
+
+.stick {
+    display: block;
+    width: 5px;
+    height: 13px;
+    border-radius: 5px;
+    background-color: hsl(193, 38%, 86%);
+    margin: 0 3px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: -25px;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    transition: filter 0.3s ease;
+}
+
+.btn:hover {
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+}
+
+.icon-dice {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) { 
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .advice-id {
+        letter-spacing: 3px;
+    }
+
+    #advice {
+        font-size: 22px;
+    }
 }
